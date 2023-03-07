@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>
+    <ol>
+    {% for item in objlist %}
+    <li> Title: {{item.title}} Description: {{item.description}} Price: {{item.price}}</li>
+    {% endfor %}
+    </ol>
+</p>
+{% endblock %}
