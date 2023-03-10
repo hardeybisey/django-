@@ -4,7 +4,8 @@
 <p>
     <ol>
     {% for item in objlist %}
-    <li> Title: {{item.title}} Description: {{item.description}} Price: {{item.price}}</li>
+    <p> <a href = {{ item.get_absolute_url }} >{{item.title}} </a>
+        Description: {{item.description}} Price: {{item.price}}</p>
     {% endfor %}
     </ol>
 </p>
